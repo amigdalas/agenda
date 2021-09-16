@@ -1,37 +1,112 @@
-## Welcome to GitHub Pages
+<head title="Coletivo Amígdalas"></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+border:0;
+font-size:30px!important;
+margin:10px 5px;
+padding:10px;
+width:50px;
+cursor: pointer;
+}
 
-You can use the [editor on GitHub](https://github.com/amigdalas/agenda/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+.footer {
+background-color:#1a1a1a;
+border-top:1px dotted #333;
+bottom:0;
+left:0;
+position:absolute;
+right:0;
+}
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+.logo {
+background-color:transparent !important;
+}
 
-### Markdown
+.mainDiv {
+background:#1a1a1a;
+color:#a03232;
+font-family:Helvetica, sans-serif;
+font-size:10px;
+height:100%;
+left:0;
+margin:0;
+overflow:hidden;
+position:absolute;
+text-align:center;
+top:0;
+width:100%;
+}
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+.titleCard{
+color:#c1282d;
+z-index:10;
+}
 
-```markdown
-Syntax highlighted code block
+.markdown-body p {
+    margin-top: 0;
+    margin-bottom: 0px;
+}
 
-# Header 1
-## Header 2
-### Header 3
+a::before, a::after {
+content: "  ★  ";
+color: #c1282d;
+font-size: 7px;
+position: relative;
+bottom: 2px;
+}
 
-- Bulleted
-- List
+.header {
+margin-top: -14px;
+}
+.header::before, .header::after {
+content: "    ";
+}
 
-1. Numbered
-2. List
+.no-after::after, .no-after::before{
+content:"";
+  }
 
-**Bold** and _Italic_ and `Code` text
+a, x {
+font-weight: 700;
+border:1px dotted #333;
+color:#fff;
+display:block;
+font-size:12px;
+height:100%;
+min-height:35px;
+padding:20px 2px;
+position:relative;
+text-align:center;
+text-decoration:none!important;
+width:100%;
+}
+a {
+    margin: -8px 0;
+    top: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 
-[Link](url) and ![Image](src)
-```
+body {
+text-transform: uppercase;
+background:#1a1a1a;
+}
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+del > a {
+color:#666 !important;
+}
+</style>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/amigdalas/agenda/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<div class="mainDiv" markdown="1">
+<a class="header"><img class="logo" src="./logo.svg" height="75"></a>
+<br>
+{% include_relative sites.md %}
+<div class="footer">
+<x onclick="window.location.href = 'https://www.instagram.com/coletivo_amigdalas/'" class="fa fa-instagram"></x>
+<x onclick="window.location.href = 'https://www.facebook.com/Coletivo-Am%C3%ADgdalas-104712007882184/'" class="fa fa-facebook-f"></x>
+<x onclick="window.location.href = 'https://www.youtube.com/channel/UCig7BqOgl6cLp-fJi2fRQFw'" class="fa fa-youtube"></x>
+<x onclick="window.location.href = 'mailto:coletivoamigdalas2017@gmail.com'" class="fa fa-envelope"></x>
+</div>
+</div>
