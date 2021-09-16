@@ -2,7 +2,7 @@
  ⚠ INSTRUÇÕES ⚠
 ----------------------------------------------------- 
 
- [ CLIQUE AQUI PARA EDITAR A LISTA DE LINKS ]( https://github.com/jetrotal/coletivoamigdalas/edit/main/sites.md )
+ [ CLIQUE AQUI PARA EDITAR A LISTA DE LINKS ]( https://github.com/amigdalas/agenda/edit/gh-pages/sites.md )
 ______
 
 Os `Links` são escritos assim:<br> 
@@ -28,4 +28,4 @@ O resultado demora +/- 30 segundos para aparecer no site.<br><br>
 ![image](https://user-images.githubusercontent.com/45118493/128441497-a572f611-ec1b-4523-a8b6-0223fe9d929f.png)<br>
 
  
- [``` https://jetrotal.github.io/coletivoamigdalas/  ```](https://jetrotal.github.io/coletivoamigdalas/)
+ [``` https://amigdalas.github.io/agenda/  ```](https://amigdalas.github.io/agenda/)
