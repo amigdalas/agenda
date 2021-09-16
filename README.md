@@ -1,9 +1,7 @@
 
- ⚠ INSTRUÇÕES ⚠
------------------------------------------------------ 
+# [`👉 CLIQUE AQUI PARA EDITAR A LISTA DE LINKS `]( https://github.com/amigdalas/agenda/edit/gh-pages/sites.md )
+<br>
 
- [` CLIQUE AQUI PARA EDITAR A LISTA DE LINKS `]( https://github.com/amigdalas/agenda/edit/gh-pages/sites.md )
-______
 
 Os `Links` são escritos assim:<br> 
 ```markdown
