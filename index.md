@@ -109,8 +109,6 @@ color:#666 !important;
 <x onclick="window.location.href = 'https://www.facebook.com/Coletivo-Am%C3%ADgdalas-104712007882184/'" class="fa fa-facebook-f"></x>
 <x onclick="window.location.href = 'https://www.youtube.com/channel/UCig7BqOgl6cLp-fJi2fRQFw'" class="fa fa-youtube"></x>
 <x onclick="window.location.href = 'mailto:coletivoamigdalas2017@gmail.com'" class="fa fa-envelope"></x>
-teste [random value]
-    [random value]:format(Sys.Date(), "%d-%m-%Y")
 
 </div>
 </div>
