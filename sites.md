@@ -1,4 +1,5 @@
 <!--👇 Links Novos 👇-->
+[ Enquanto as Cigarras Cantam : Estréia ](https://www.instagram.com/p/CZUYnowrn0v/) Datas no Link
 [ Verbo Mulher - Nova Temporada no Sympla ](https://www.sympla.com.br/verbo-mulher__1359426) Clique para Assistir
 [ Matéria: Verbo Mulher na SP Escola de Teatro ](https://www.spescoladeteatro.org.br/noticia/tag/verbo-mulher) DIA 21/7/2021
 <del>
