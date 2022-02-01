@@ -7,8 +7,7 @@
   }
 
   function setMessage() {
-    return `https://raw.githubusercontent.com/amigdalas/agenda/gh-pages/cartaz_cigarras.png
-
+    return `
 Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de ` + session + `.
 
 no Espaço da Companhia do Feijão, no endereço:
@@ -16,11 +15,14 @@ Rua Dr. Teodoro Baima, 68, República, São Paulo, SP.
 
 Estou ciente de que preciso levar comprovante de vacinação.
 
+https://raw.githubusercontent.com/amigdalas/agenda/gh-pages/cartaz_cigarras.png
+
 `
   }
 
   function SendMessage() {
-    var finalMessage = setMessage();
+    var finalMessage = encodeURI(setMessage());
+console.log(finalMessage)
     window.open('https://wa.me/5511985149731/?text=' + finalMessage, '_blank');
   }
 </script>
