@@ -1,5 +1,4 @@
-<head>
-<title>Enquanto as Cigarras Cantam - Agendar Ingresso pelo Whats</title></head>
+<head title="Enquanto as Cigarras Cantam - Agendar Ingresso pelo Whats">
   <script>
     var session = "";
 
@@ -27,6 +26,14 @@ tinyurl.com/cartazCigarras
     }
   </script>
   <style>
+:root {
+--resizer: 1.5;
+ --fontA: calc(0.938rem * var(--resizer));
+  --fontB:calc(1rem *  var(--resizer));
+    --fontC:calc(0.75rem *  var(--resizer));
+--FontD: calc(1.625rem *  var(--resizer));
+
+}
     body {
       margin: 0;
     }
@@ -42,7 +49,7 @@ tinyurl.com/cartazCigarras
       width: 100vw;
       box-shadow: 0 0 20px 0 #0003;
       font-family: "Helvetica Neue", sans-serif;
-      font-size: 0.938rem;
+      font-size: var(--fontA);
       user-select: none;
     }
 
@@ -59,7 +66,7 @@ tinyurl.com/cartazCigarras
       height: 20px;
       vertical-align: top;
       margin-left: 10px;
-      font-size: 1rem;
+      font-size:  var(--fontB);
       max-width: 220px;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -74,8 +81,8 @@ tinyurl.com/cartazCigarras
       height: 15px;
       vertical-align: top;
       margin-left: 10px;
-      font-size: 0.75rem;
-      max-width: 220px;
+      font-size: var(--fontC);
+      max-width: 320px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -133,7 +140,7 @@ tinyurl.com/cartazCigarras
       display: inline-block;
       position: relative;
       float: right;
-      font-size: 1.625rem;
+      font-size: var(--fontD);
       color: #7f8d9a;
       top: 5px;
     }
@@ -165,7 +172,7 @@ tinyurl.com/cartazCigarras
       color: #fff;
       border-radius: 4px;
       line-height: 2rem;
-      font-size: 1rem;
+      font-size: var(--fontB);
       text-align: center;
       cursor: pointer;
     }
@@ -259,7 +266,7 @@ tinyurl.com/cartazCigarras
       </div>
       <div class="aam-whatsapp-widget-buttons-wrapper">
 
-        <div class="aam-whatsapp-widget-message-text" style="font-size:0.75rem !important; margin:12px">
+        <div class="aam-whatsapp-widget-message-text" style="font-size:var(--fontC) !important; margin:12px">
           Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de
           <select name="ingressos" id="cars" style="width:190px" onChange="changeSession(this);" onLoad="changeSession(this);">
             <option value="a"> Sábado, 19/02/2022 - 20h</option>
