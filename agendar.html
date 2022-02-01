@@ -4,12 +4,12 @@
 
   function changeSession(sel) {
     session = (sel.options[sel.selectedIndex].text);
-    console.log(session);
+    return session
   }
 
   function setMessage() {
     return `
-Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de ` + session + `.
+Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para a sessão de ` + session + `.
 
 no Espaço da Companhia do Feijão, no endereço:
 Rua Dr. Teodoro Baima, 68, República, São Paulo, SP.
@@ -264,7 +264,7 @@ console.log(finalMessage)
 
       <div class="aam-whatsapp-widget-message-text" style="font-size:12px !important; margin:12px">
         Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de
-        <select name="ingressos" id="cars" style="width:190px" onChange="changeSession(this);">
+        <select name="ingressos" id="cars" style="width:190px" onChange="changeSession(this);" onLoad="changeSession(this);">
           <option value="a"> Sábado, 19/02/2022 - 20h</option>
           <option value="b"> Domingo, 20/02/2022 - 20h</option>
           <option value="c"> Sexta, 25/02/2022 - 20h</option>
