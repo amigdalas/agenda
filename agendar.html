@@ -1,4 +1,289 @@
-<!-- botão flutuante whatsapp -->
-<a href="https://api.whatsapp.com/send?phone=51000000000&text=olá" class="whatsapp-button" target="_blank" style="position: fixed;  right: 15px; bottom: 15px;">
-  <img src="https://i.ibb.co/VgSspjY/whatsapp-button.png" alt="botão whatsapp">
-</a>
+<script>
+  var session = "";
+
+  function changeSession(sel) {
+    session = (sel.options[sel.selectedIndex].text);
+    console.log(session);
+  }
+
+  function setMessage() {
+    return `https://raw.githubusercontent.com/amigdalas/agenda/gh-pages/cartaz_cigarras.png
+
+Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de ` + session + `.
+
+no Espaço da Companhia do Feijão, no endereço:
+Rua Dr. Teodoro Baima, 68, República, São Paulo, SP.
+
+Estou ciente de que preciso levar comprovante de vacinação.
+
+`
+  }
+
+  function SendMessage() {
+    var finalMessage = setMessage();
+    window.open('https://wa.me/5511985149731/?text=' + finalMessage, '_blank');
+  }
+</script>
+<style>
+  .center-div {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+  }
+
+  .aam-whatsapp-widget-popup {
+    display: block;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    width: 300px;
+    box-shadow: 0 0 20px 0 #0003;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    user-select: none;
+  }
+
+  .aam-whatsapp-widget-title-wrapper {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+  }
+
+  .aam-whatsapp-widget-title {
+    display: block;
+    color: #fff;
+    line-height: 20px;
+    height: 20px;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 16px;
+    max-width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .aam-whatsapp-widget-subtitle {
+    display: block;
+    color: #97bbb8;
+    padding-left: 1px;
+    line-height: 17px;
+    height: 15px;
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 12px;
+    max-width: 220px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .aam-whatsapp-widget-chat-body {
+    display: block;
+    position: relative;
+    background: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png) no-repeat center;
+    background-size: 100% auto;
+    width: calc(100% - 24px);
+    min-height: 100px;
+    padding: 12px;
+  }
+
+  .aam-whatsapp-widget-head {
+    display: block;
+    position: relative;
+    background: #22776b;
+    color: #fff;
+    height: 35px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 15px 10px;
+  }
+
+  .aam-whatsapp-widget-message {
+    display: block;
+    background: #fff;
+    border-radius: 4px;
+    padding: 7px 10px;
+    box-shadow: 0px 1px 3px 0 #00000024;
+  }
+
+  .aam-whatsapp-widget-message::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 11px solid transparent;
+    border-right-color: #ffffff;
+    transform: rotate(135deg);
+    top: 1px;
+    left: 7px;
+  }
+
+  .aam-whatsapp-widget-message::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .aam-whatsapp-widget-message-time {
+    display: inline-block;
+    position: relative;
+    float: right;
+    font-size: 13px;
+    color: #7f8d9a;
+    top: 5px;
+  }
+
+  .aam-whatsapp-widget-logo {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .aam-whatsapp-widget-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .aam-whatsapp-widget-buttons-wrapper {
+    display: block;
+    /*height: 30px;*/
+    padding: 10px;
+  }
+
+  .aam-whatsapp-widget-start-chat-btn {
+    display: block;
+    background: #47e675;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 35px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .aam-whatsapp-widget-start-chat-btn svg {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px -4px;
+  }
+
+  .aam-whatsapp-widget-close-btn {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 2px;
+    top: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .aam-whatsapp-widget-close-btn:hover {
+    background: #ffffff26;
+  }
+
+  .aam-whatsapp-widget-close-btn span {
+    display: block;
+    position: relative;
+    width: 12px;
+    height: 2px;
+    background: #7dbdb1;
+    margin-left: 2.3px;
+  }
+
+  .aam-whatsapp-widget-close-btn span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9.3px;
+    left: 1.3px;
+  }
+
+  .aam-whatsapp-widget-close-btn span:nth-child(2) {
+    transform: rotate(-45deg);
+    top: 7px;
+    left: 2px;
+  }
+
+  .aam-whatsapp-widget-logo-wrapper {
+    display: inline-block;
+    position: relative;
+  }
+
+  .aam-whatsapp-widget-logo-wrapper::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ad506;
+    bottom: 3px;
+    right: 0px;
+    box-shadow: 0 0 2px 1px #00000026;
+  }
+</style>
+
+<div class="center-div">
+  <div class="aam-whatsapp-widget-popup">
+    <div class="aam-whatsapp-widget-head">
+      <div class="aam-whatsapp-widget-close-btn" onclick="window.open('https://amigdalas.github.io/agenda/'); ">
+        <span></span><span></span>
+      </div>
+      <div class="aam-whatsapp-widget-logo-wrapper">
+        <div class="aam-whatsapp-widget-logo">
+        </div>
+      </div>
+      <div class="aam-whatsapp-widget-title-wrapper">
+        <div class="aam-whatsapp-widget-title">
+          Coletivo Amígdalas
+        </div>
+        <div class="aam-whatsapp-widget-subtitle">
+          Reservas com Larissa Miranda
+        </div>
+      </div>
+    </div>
+    <div class="aam-whatsapp-widget-chat-body">
+      <div class="aam-whatsapp-widget-message">
+        <div class="aam-whatsapp-widget-message-text">
+          Olá, Clique no botão abaixo e agende um ingresso pelo Whats.
+        </div>
+      </div>
+    </div>
+    <div class="aam-whatsapp-widget-buttons-wrapper">
+
+      <div class="aam-whatsapp-widget-message-text" style="font-size:12px !important; margin:12px">
+        Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de
+        <select name="ingressos" id="cars" style="width:190px" onChange="changeSession(this);">
+          <option value="a"> Sábado, 19/02/2022 - 20h</option>
+          <option value="b"> Domingo, 20/02/2022 - 20h</option>
+          <option value="c"> Sexta, 25/02/2022 - 20h</option>
+          <option value="d"> Sábado, 26/02/2022 - 20h</option>
+          <option value="d"> Domingo, 27/02/2022 - 20h</option>
+        </select>
+        <br><br>
+        no Espaço da Companhia do Feijão, no endereço:
+        Rua Dr. Teodoro Baima, 68, República, São Paulo, SP.
+        <br><br>
+        Estou ciente de que preciso levar comprovante de vacinação.
+        <br>
+
+      </div>
+      <div class="aam-whatsapp-widget-start-chat-btn" onClick="SendMessage();">
+        <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FFFFFF" d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z" />
+          <path fill="#FFFFFF" d="m20.52 3.449c-7.689-7.433-20.414-2.042-20.419 8.444 0 2.096.549 4.14 1.595 5.945l-1.696 6.162 6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99z" />
+        </svg>
+        Solicitar Ingresso
+      </div>
+    </div>
+  </div>
+</div>
