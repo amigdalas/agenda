@@ -1,5 +1,6 @@
 <!--👇 Links Novos 👇-->
-[ Enquanto as Cigarras Cantam : Estréia ](https://www.instagram.com/p/CZUYnowrn0v/) DIAS 19/02/2022 À 27/02/2022
+[ Ingressos pelo Whats : Enquanto as Cigarras Cantam ](https://www.instagram.com/p/CZUYnowrn0v/) DIAS 19/02/2022 À 27/02/2022
+[ Estréia : Enquanto as Cigarras Cantam ](https://www.instagram.com/p/CZUYnowrn0v/) DIAS 19/02/2022 À 27/02/2022
 [ Verbo Mulher - Nova Temporada no Sympla ](https://www.sympla.com.br/verbo-mulher__1359426) Clique para Assistir
 [ Matéria: Verbo Mulher na SP Escola de Teatro ](https://www.spescoladeteatro.org.br/noticia/tag/verbo-mulher) DIA 21/7/2021
 <del>
