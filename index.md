@@ -96,11 +96,12 @@ background:#1a1a1a;
 }
 
 del {
-    opacity:0.3
+    opacity:0.2 !important
 }
 
 del > a {
-color:#666 !important;
+    color:#666 !important;
+    opacity:0.2 !important
 }
 </style>
 
