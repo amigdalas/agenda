@@ -95,6 +95,10 @@ text-transform: uppercase;
 background:#1a1a1a;
 }
 
+del {
+    opacity:0.3
+}
+
 del > a {
 color:#666 !important;
 }
