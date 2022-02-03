@@ -1,6 +1,8 @@
 <head title="Enquanto as Cigarras Cantam - Agendar Ingresso pelo Whats">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"></link>
+
   <script>
-    var session = "";
+    var session = "Sábado, 19/02/2022 - 20h";
 
     function changeSession(sel) {
       session = (sel.options[sel.selectedIndex].text);
@@ -26,22 +28,22 @@ tinyurl.com/cartazCigarras
     }
   </script>
   <style>
-:root {
---resizer: 1.5;
- --fontA: calc(0.938rem * var(--resizer));
-  --fontB:calc(1rem *  var(--resizer));
-    --fontC:calc(1rem *  var(--resizer));
---FontD: calc(1.625rem *  var(--resizer));
+    :root {
+      --resizer: 1.5;
+      --fontA: calc(0.938rem * var(--resizer));
+      --fontB: calc(1rem * var(--resizer));
+      --fontC: calc(1rem * var(--resizer));
+      --FontD: calc(1.625rem * var(--resizer));
+    }
 
-}
     body {
       margin: 0;
-      background-color:#000;
+      background-color: #000;
     }
 
     .center-div {
-      margin:0;
-    background-color: #FFF;
+      margin: 0;
+      background-color: #FFF;
     }
 
     .aam-whatsapp-widget-popup {
@@ -53,7 +55,6 @@ tinyurl.com/cartazCigarras
       font-family: "Helvetica Neue", sans-serif;
       font-size: var(--fontA);
       user-select: none;
-      
     }
 
     .aam-whatsapp-widget-title-wrapper {
@@ -69,7 +70,7 @@ tinyurl.com/cartazCigarras
       height: 20px;
       vertical-align: top;
       margin-left: 10px;
-      font-size:  var(--fontB);
+      font-size: var(--fontB);
       max-width: 220px;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -80,12 +81,9 @@ tinyurl.com/cartazCigarras
       display: block;
       color: #97bbb8;
       padding-left: 1px;
-      line-height: 17px;
-      height: 15px;
       vertical-align: top;
       margin-left: 10px;
       font-size: var(--fontC);
-      max-width: 320px;
       text-overflow: ellipsis;
       white-space: nowrap;
       overflow: hidden;
@@ -97,8 +95,9 @@ tinyurl.com/cartazCigarras
       background: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png) no-repeat center;
       background-size: 100% auto;
       width: calc(100% - 24px);
-      min-height: 250px /* calc(100vh - 275px); */
-      padding: 12px;
+      min-height: 250px
+        /* calc(100vh - 275px); */
+        padding: 12px;
     }
 
     .aam-whatsapp-widget-head {
@@ -106,7 +105,6 @@ tinyurl.com/cartazCigarras
       position: relative;
       background: #22776b;
       color: #fff;
-      height: 35px;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       padding: 15px 10px;
@@ -174,7 +172,7 @@ tinyurl.com/cartazCigarras
       background: #47e675;
       color: #fff;
       border-radius: 4px;
-      line-height: 2rem;
+      line-height: 3.5rem;
       font-size: var(--fontB);
       text-align: center;
       cursor: pointer;
@@ -261,40 +259,35 @@ tinyurl.com/cartazCigarras
         </div>
       </div>
       <div class="aam-whatsapp-widget-chat-body">
-        <div class="aam-whatsapp-widget-message">
-          <div class="aam-whatsapp-widget-message-text">
-            Olá, Clique no botão abaixo e agende um ingresso pelo Whats.
-          </div>
-        </div>
       </div>
       <div class="aam-whatsapp-widget-buttons-wrapper">
 
         <div class="aam-whatsapp-widget-message-text" style="font-size:var(--fontC) !important; margin:12px">
-          Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam". Para o Sessão de
-          <select name="ingressos" id="cars" style="width:190px" onChange="changeSession(this);" onLoad="changeSession(this);">
+          Olá, Gostaria de agendar um ingresso para a peça "Enquanto as Cigarras Cantam", Para a Sessão de
+          <select name="ingressos" id="cars" onChange="changeSession(this);" onLoad="changeSession(this);">
             <option value="a"> Sábado, 19/02/2022 - 20h</option>
             <option value="b"> Domingo, 20/02/2022 - 20h</option>
             <option value="c"> Sexta, 25/02/2022 - 20h</option>
             <option value="d"> Sábado, 26/02/2022 - 20h</option>
             <option value="d"> Domingo, 27/02/2022 - 20h</option>
           </select>
-          <br><br>
-          no Espaço da Companhia do Feijão, no endereço:
+          <br>
+          no Espaço da Companhia do Feijão, no endereço:<br>
           Rua Dr. Teodoro Baima, 68, República, São Paulo, SP.
           <br><br>
           Estou ciente de que preciso levar comprovante de vacinação<br>
           e conferi as informações contidas no cartaz da peça:<br>
           <a href="https://tinyurl.com/cartazCigarras"> tinyurl.com/cartazCigarras</a>
-          <br>
+          <br><br>
 
         </div>
         <div class="aam-whatsapp-widget-start-chat-btn" onClick="SendMessage();">
-          <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
+          <svg style="transform: scaleX(1.5) scaleY(1.5) translateY(-3px)" id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg">
             <path fill="#FFFFFF" d="m17.507 14.307-.009.075c-2.199-1.096-2.429-1.242-2.713-.816-.197.295-.771.964-.944 1.162-.175.195-.349.21-.646.075-.3-.15-1.263-.465-2.403-1.485-.888-.795-1.484-1.77-1.66-2.07-.293-.506.32-.578.878-1.634.1-.21.049-.375-.025-.524-.075-.15-.672-1.62-.922-2.206-.24-.584-.487-.51-.672-.51-.576-.05-.997-.042-1.368.344-1.614 1.774-1.207 3.604.174 5.55 2.714 3.552 4.16 4.206 6.804 5.114.714.227 1.365.195 1.88.121.574-.091 1.767-.721 2.016-1.426.255-.705.255-1.29.18-1.425-.074-.135-.27-.21-.57-.345z" />
             <path fill="#FFFFFF" d="m20.52 3.449c-7.689-7.433-20.414-2.042-20.419 8.444 0 2.096.549 4.14 1.595 5.945l-1.696 6.162 6.335-1.652c7.905 4.27 17.661-1.4 17.665-10.449 0-3.176-1.24-6.165-3.495-8.411zm1.482 8.417c-.006 7.633-8.385 12.4-15.012 8.504l-.36-.214-3.75.975 1.005-3.645-.239-.375c-4.124-6.565.614-15.145 8.426-15.145 2.654 0 5.145 1.035 7.021 2.91 1.875 1.859 2.909 4.35 2.909 6.99z" />
           </svg>
           Solicitar Ingresso
-        </div>
+        </div><br>
       </div>
     </div>
   </div>
