@@ -1,0 +1,7 @@
+# Site settings
+title: Agenda - Coletivo Amígdalas
+name: Coletivo Amígdalas
+description: >
+  Agenda de Curso, Apresentações, Notícias e Eventos do Coletivo Amígdalas.
+baseurl: "/agenda" # the subpath of your site, e.g. /blog/
+url: "https://amigdalas.github.io" # the base hostname & protocol for your site
